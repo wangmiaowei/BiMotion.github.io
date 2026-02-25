@@ -162,19 +162,19 @@
           <div class="content has-text-justified">
             <p>
               Text-guided dynamic 3D character generation has advanced rapidly, yet producing high-quality motion that
-              faithfully reflects rich textual descriptions remains challenging. Existing methods tend to generate limited
-              sub-actions or incoherent motion due to fixed-length temporal inputs and discrete frame-wise representations
-              that fail to capture rich motion semantics. We address these limitations by representing motion with
-              <b>continuous differentiable B-spline curves</b>, enabling more effective motion generation without modifying
-              the capabilities of the underlying generative model. Specifically, our closed-form, Laplacian-regularized
-              B-spline solver efficiently compresses variable-length motion sequences into compact representations with a
-              fixed number of control points. Further, we introduce a normal-fusion strategy for input shape adherence
-              along with correspondence-aware and local-rigidity losses for motion-restoration quality. To train our model,
-              we collate <b>BIMO</b>, a new dataset containing diverse variable-length 3D motion sequences with rich,
-              high-quality text annotations. Extensive evaluations show that our feed-forward framework <b>BiMotion</b>
-              generates more expressive, higher-quality, and better prompt-aligned motions than existing state-of-the-art
-              methods, while also achieving faster generation.
+              faithfully reflects rich textual descriptions remains challenging. BiMotion addresses these limitations by
+              representing motion with <b>continuous differentiable B-spline curves</b>, enabling more effective motion
+              generation without modifying the capabilities of the underlying generative model.
             </p>
+            <h3>Key Contributions:</h3>
+            <ul>
+              <li><b>B-spline Representation:</b> A closed-form, Laplacian-regularized B-spline solver that efficiently
+                compresses variable-length motion sequences into compact fixed-length control points.</li>
+              <li><b>Enhanced Geometry Adherence:</b> Introduces a normal-fusion strategy for input shape adherence along
+                with correspondence-aware and local-rigidity losses.</li>
+              <li><b>BIMO Dataset:</b> A new dataset featuring diverse variable-length 3D motion sequences with rich,
+                high-quality text annotations.</li>
+            </ul>
           </div>
         </div>
       </div>
